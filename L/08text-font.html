@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--网页一般用14px 
+        尽量使用偶数字号
+        中文字体需要加英文状态下的引号，单个英文字也不需要用加引号，但有符号或者空格 就不必须加引号
+        有多个设定字体时，浏览器首先看第一个字体是否支持然后再向后寻找-->
+
+    <!--字体编号也可以用Unicode编码，增强兼容性如：\5B8B\4F53 表示宋体 并且需要加引号-->
+    <style>
+        h2 {
+            font-size: 30px;
+            color: pink;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h4 {
+            font-size: 14px;
+            color: purple;
+        }
+
+        p {
+
+            font-size: 14px;
+        }
+
+        span {
+            font-weight: 700;
+            /*字体加粗的效果 用的比较多的就是font-weight来控制粗体*/
+            font-style: italic;
+            /* font-style一般为normal或italic */
+        }
+
+        strong {
+            font-weight: normal;
+            /*让加粗的字体变得不粗 */
+        }
+
+        em {
+            font-style: normal;
+            /*让斜体变得不斜 */
+            color: blue;
+        }
+    </style>
+    <!-- font 字体的设定可以在一行里完成：顺序是： "font-style font-variant font-weight font-size/line-height font-family"
+    font-size和font-family的值是必需的。如果缺少了其他值，默认值将被插入，如果有默认值的话，用空格隔开。
+    注意： line - height属性设置行与行之间的空间。 -->
+
+</head>
+
+<body>
+    <h2>企业简介</h2>
+    <h4>公司由来</h4>
+    <p>“<em>公司</em>的历史起源可以追溯到十六十七世纪,<span>由英国人和荷兰人发起的航海探险</span>。<strong>英国东印度公司创立于1600年</strong>,荷兰东印度公司,创立于1602年,
+        这两家北欧的贸易企业。“公司”一词,为明末清初福建农村中的一种带有帮会性质的组合形式。后来这种名称,又为闽粤两省的“洪门”(即“天地会”)
+        在海外华侨社会中首先使用。当时从广东潮州、梅州、海陆丰各地到南洋婆罗洲掘金谋生的华侨,已有七万多人。他们分成二十几个集团组织,而这些集团的成员,
+        大都是“洪门”子弟,他们的组织就名之为“公司”。</p>
+</body>
+
+</html>

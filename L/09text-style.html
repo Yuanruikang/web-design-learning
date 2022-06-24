@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 文字颜色：可以用英文单词、十六进制、rgb值来表示 用rgba 来表示透明度 */
+        body {
+            color: rgba(255, 0, 0, 1);
+        }
+
+        h1 {
+            color: #00ff00;
+        }
+
+        p {
+            text-indent: 2em;
+        }
+
+        /*用em单位表示字符宽度 */
+        p.ex {
+            color: rgb(0, 0, 255);
+        }
+
+        /* 对齐方式 */
+        /* 左、右、中间、两端对齐(justify) */
+        h1 {
+            text-align: center;
+        }
+
+        p.date {
+            text-align: right;
+        }
+
+        p.main {
+            text-align: justify;
+        }
+
+        /* 文字修饰，加入划线 */
+        h1.over {
+            text-decoration: overline;
+        }
+
+        h2.line {
+            text-decoration: line-through;
+        }
+
+        h3.under {
+            text-decoration: underline;
+        }
+
+        /* 字间距和词间距 */
+        p.letter-spacing {
+            letter-spacing: 30px;
+        }
+
+        p.word-spacing {
+            word-spacing: 30px;
+        }
+
+        /* 文本阴影 */
+        /* h-shadow	必需。水平阴影的位置。允许负值。
+        v-shadow	必需。垂直阴影的位置。允许负值。
+        blur	可选。模糊的距离。意为：阴影边缘的清晰与模糊程度，越大越模糊
+        color	可选。阴影的颜色。参阅 CSS 颜色值。 */
+    </style>
+
+</head>
+
+<body>
+    <h1>这是标题 1</h1>
+    <!-- 一个网页的背景颜色是指在主体内的选择：
+    对于W3C标准的CSS：如果你定义了颜色属性，你还必须定义背景色属性。 -->
+    <p>这是一个普通的段落。请注意,本文是红色的。页面中定义默认的文本颜色选择器。</p>
+    <p class="ex">这是一个类为"ex"的段落。这个文本是蓝色的。</p>
+
+    <p class="date">2015 年 3 月 14 号</p>
+    <p class="main">“当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；
+        当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，
+        我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；
+        然后，谁知道呢?我甚至可能改变这个世界。”</p>
+    <p><b>注意：</b> 重置浏览器窗口大小查看 &quot;justify&quot; 是如何工作的。</p>
+
+    <h1 class="over">overline</h1>
+    <h2 class="line">line-through</h2>
+    <h3 class="under">当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；
+        当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，
+        我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；
+        然后，谁知道呢?我甚至可能改变这个世界。</h3>
+    <p class="letter-spacing">word-spacing</p>
+    <p class="word-spacing">word spacing 我自己</p>
+</body>
+
+</html>

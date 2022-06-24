@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <base href="http://www.runoob.com/images/" target="_blank">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <h4 style="text-align:center">一个课程表</h4>
+        <table border="1" cellpadding="10" width="100%">
+            <!--border 指的是表格框外围的厚度-->
+            <!--cellpadding 指的是cell里的值离cell边缘的距离-->
+            <!--caption在这里-->
+            <caption>Monthly savings</caption>
+            <!--table row 这一行-->
+            <tr>
+                <!--table head-->
+                <th colspan="2">时间/日期</th>
+                <!--colspan 列合并-->
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+            </tr>
+            <tr>
+                <th rowspan="2">上午</th>
+                <!--rowspan 行合并-->
+                <th>8:30-10:15</th>
+                <!--table head 会自动居中，而table data 是会左靠齐的-->
+                <td>语文</td>
+	            <td>语文</td>
+	            <td>语文</td>
+	            <td>语文</td>
+	            <td>语文</td>
+            </tr>
+            <tr>
+                <!--rowspan 行合并-->
+                <th>10:30-12:00</th>
+                <!--table head 会自动居中，而table data 是会左靠齐的-->
+                <td>语文</td>
+	            <td>语文</td>
+	            <td>语文</td>
+	            <td>语文</td>
+	            <td>语文</td>
+            </tr>
+            <tr>
+                <!--中间空一行用colspan 是列合并-->
+                <th colspan="7"></th>
+            </tr>
+            <tr>
+                <th rowspan="2">下午</th>
+                <th>13:30-15:15</th>
+                <!--table head 会自动居中，而table data 是会左靠齐的-->
+                <td>语文 语文 语文 语文 语文</td>
+	            
+
+            </tr>
+
+        </table>
+        <title>row and line</title>
+
+    </head>
