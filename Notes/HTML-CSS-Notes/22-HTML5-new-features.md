@@ -46,14 +46,6 @@ HTML5在不使用插件的情况下，也可以原生的支持视频格式文件
 | loop     | loop     | 如果出现该属性，则每当音频结束时重新开始插放。   |
 | src      | url      | 要播放的音频的 URL。                             |
 
-tell application "System Preferences"
-	quit
-end tell
-set theCheckbox to (checkbox 1 of tab group 1 of window "触控板" of application process "System Preferences" of application "System Events")
-if checkboxStatus is false then
-					click theCheckbox
-				else if checkboxStatus is true then
-					set (checkbox 1 of tab group 1 of window "触控板" of application process "System Preferences" of application "System Events") to false
 
 
 
