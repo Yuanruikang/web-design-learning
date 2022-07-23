@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      text-align: center;
+    }
+
+    .box a {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      background-color: #f7f7f7;
+      border: 1px solid #ccc;
+      /* text-align: center; */
+      line-height: 36px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .box .prev,
+    /* 注意类的优先级 */
+    .box .next {
+      width: 85px;
+    }
+
+    .box input,
+    .box button {
+      background-color: #f7f7f7;
+      border: 1px solid #ccc;
+    }
+
+    .box-simple {
+      width: 0;
+      height: 0;
+      /* 上边框宽度调大 让它变成非等腰直角三角形,都写一样会成等腰三角形*/
+      border-top: 100px solid transparent;
+      border-right: 50px solid skyblue;
+      /* 左边和下边的边框宽度设置为0 */
+      border-left: 100 solid green;
+      border-bottom: 50 solid blue;
+    }
+
+    .css-9wpoiy {
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-bottom: 0.0625rem solid var(--ds-color-london-85);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      line-height: var(--ds-type-leading-lower);
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      -webkit-justify-content: space-evenly;
+      justify-content: space-evenly;
+      padding: 0.75rem 0;
+      position: relative;
+      width: 100%;
+    }
+
+    @media (min-width: 60rem) {
+      .css-9wpoiy {
+        border-bottom: 0;
+        border-left: 0.0625rem solid var(--ds-color-london-85);
+        -webkit-flex-basis: 0;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        padding: 0 0 0 1rem;
+        margin-right: 1rem;
+      }
+
+      .css-9wpoiy:first-of-type {
+        border-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 1rem;
+      }
+
+      .css-9wpoiy:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    .css-9wpoiy>div {
+      width: calc(100% - 3.75rem);
+    }
+
+    .css-9wpoiy img {
+      display: block;
+      margin-right: 1rem;
+      width: 3.5rem;
+    }
+
+    @media (min-width: 60rem) {
+      .css-9wpoiy img {
+        margin-right: 0.75rem;
+        width: 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <a href="" class="prev">&lt;&lt;上一页</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <a href="" class="next">&gt;&gt;下一页</a>
+    到第
+    <input type="text">
+    页
+    <button>确定✅</button>
+  </div>
+  <div class="box-simple">
+
+  </div>
+</body>
+
+</html>

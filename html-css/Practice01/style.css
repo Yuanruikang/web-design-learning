@@ -1,0 +1,210 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* 确认版心 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 在页面开头让所有li样式被清除 */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.head {
+  height: 42px;
+  margin: 30px auto;
+  /* auto 此地方会层叠，下面的margin会覆盖上面的margin，这里加margin让盒子居中 */
+}
+
+.logo {
+  float: left;
+  width: 198px;
+  height: 42px;
+
+}
+
+.nav {
+  float: left;
+  margin-left: 60px;
+
+}
+
+/* 给li加浮动，因为li本身是竖着排布的，这样影响了样式 */
+.nav ul li {
+  float: left;
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  display: block;
+  height: 42px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: black;
+  font: 18px/42px "Microsoft Yahei";
+}
+
+.nav ul li a:hover {
+  border-bottom: 2px solid #00a4ff;
+  color: #00a4ff;
+}
+
+.search {
+  float: left;
+  width: 412px;
+  height: 42px;
+  margin-left: 50px;
+}
+
+.search input {
+  float: left;
+  /* 这里的边框宽度不应被量入，
+  因为border是有宽度的 */
+  width: 345px;
+  height: 40px;
+  border: 1px solid #00a4ff;
+  color: lightgrey;
+  font-size: 14px;
+  /* 通过padding-left让文字往右移动 同时width需要减去15*/
+  padding-left: 15px;
+  border-right: 0px;
+}
+
+/* input 和 button 是行内块元素，
+默认情况下之间有个缝隙，所以在button没有float之前，他会掉下来 */
+.search button {
+  float: left;
+  height: 42px;
+  width: 50px;
+  padding: 1px 0;
+  /* 按钮都是有默认的边框，所以必须要去掉 */
+  border-width: 0px;
+}
+
+.user {
+  float: right;
+  margin-right: 30px;
+  line-height: 42px;
+}
+
+/* banner section */
+.banner {
+  height: 421px;
+  background-color: #1c036c;
+}
+
+.banner .w {
+
+  height: 421px;
+  /* background合并写 */
+  background: url(/Users/connor/Downloads/html_css_material-master/第07天/study/images/banner2_20190819_210028.png) no-repeat top center;
+}
+
+.banner .w .subnav {
+  float: left;
+  width: 190px;
+  height: 421px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* .banner .w .subnav ul li {
+  height: 42px;
+  width: 190px;
+} */
+
+.banner .w .subnav ul li a {
+  display: block;
+  height: 45px;
+  /* width: 150px; */
+  padding: 0 20px;
+  font: 14px/45px "Microsoft Yahei";
+  color: white;
+}
+
+.banner .w .subnav ul li a span {
+  float: right;
+}
+
+.banner .w .subnav ul li a:hover {
+  color: #00a4ff;
+}
+
+.banner .w .course {
+  float: right;
+  width: 230px;
+  height: 300px;
+  /* 浮动的盒子不会有外边距合并的问题 */
+  margin-top: 50px;
+  background-color: #fff;
+}
+
+.banner .w .course .mytable {
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  font-size: 18px;
+  background-color: #9bceea;
+  color: #fff;
+}
+
+.banner .w .course .mycourses ul li a {
+  display: block;
+  height: 27px;
+  padding: 14px 20px;
+  /* line-height: 56px; */
+  border-bottom: 1px solid lightgrey;
+
+}
+
+.banner .w .course .mycourses ul li a p {
+  height: 16px;
+  font-size: 16px;
+  color: #4e4e4e;
+}
+
+.banner .w .course .mycourses ul li a span {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+.recommend {
+  height: 60px;
+  background-color: #fff;
+  margin-top: 10px;
+  /* 行高、font会继承 */
+  line-height: 60px;
+  font-size: 14px;
+  box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.recommend ul {
+  float: left;
+}
+
+.recommend li {
+  /* 注意这里的浮动不能加给a */
+  float: left;
+}
+
+.recommend ul li .first {
+  color: #00a4ff;
+  padding: 0 38px;
+  /* 不在这里写行高，因为行高会继承 font也会继承*/
+  /* line-height: 60px; */
+  border-left: none;
+}
+
+.recommend ul li a {
+  color: black;
+  padding: 0 38px;
+  /* line-height: 60px; */
+  border-left: 1px solid #a5a5a5;
+}

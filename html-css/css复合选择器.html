@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>交集选择器</h4>
+    <p>交集选择器是并且的意思，即...又...的意思</p>
+    <p>比如：p.one 选择类名为.one的段落标签</p>
+    <p>用的较少</p>
+    <hr>
+    <h4>并集选择器</h4>
+    <p>.one,p,#test{color:#F00;} 表示这三个选择器都会执行红色显示，<em>通常用于集体声明</em></p>
+    <hr>
+    <4>后代选择器：儿子、孙子都要选</4>
+    <p></p>
+    <style>
+        div p{
+            color: pink;
+        }
+        .jianli p{
+            color: red;
+        } 
+    </style>
+    <p>王者荣耀</p>
+    <div class="jianli"><p>
+        王思聪
+    </p></div>
+    <div><p>
+        宝强
+        <ol>
+            <li>
+                <p>变吗</p>
+            </li>
+        </ol>
+    </p></div>
+    <4>子元素选择器：之选下一代</4>
+    <style>
+        .nav li{
+            color: red; /*空格 后代选择器 选择亲儿子 孙子 重孙子*/
+        }
+        .nav > li{
+             color: pink; /*大于号 子元素选择器 只选择亲儿子 */
+        }
+    </style>
+    <ul class="nav"> <!--ul和li才是父子关系和下面的二级菜单没关系-->
+        <li>一级菜单
+            <ul>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+            </ul>
+        </li>
+    </ul>
+    
+
+
+</body>
+</html>

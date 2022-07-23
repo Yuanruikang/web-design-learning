@@ -10,5 +10,10 @@
 			"path": "Notes"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"editor.fontFamily": "MesloLGS NF, 'Courier New', monospace",
+		"editor.fontLigatures": false,
+		"editor.codeLensFontFamily": "MesloLGS NF",
+		"liveServer.settings.multiRootWorkspaceName": "Notes"
+	}
 }

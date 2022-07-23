@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>css-backgroud</title>
+    <!--scroll: 背景图片相对于容器位置固定
+            fixed: 背景图片相对于浏览器窗口固定
+            local: 背景图片相对于容器内容位置固定-->
+    <!--background-size 100% 100%为纵横上全覆盖背景 会拉伸图片 
+            cover和contain 会保留背景图片的纵横比：
+            cover	此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。
+            contain	此时会保持图像的纵横比并将图像缩放成将适合背景定位区域的最大大小。-->
+    <style>
+        div {
+
+            /* overflow:scroll; */
+            /* background-image: url("https://pics1.baidu.com/feed/024f78f0f736afc331f15e545b4e9fceb64512e7.png?token=321fc1f90edd8801b9c5d94f118fd3d5"); */
+            /* background-repeat: repeat; */
+            background-image: url("../../../../../Desktop/628a0172dc664f2740250ed9691b65ee.jpg");
+            height: 200px;
+            width: 300px;
+            /* background-attachment: local; */
+            background-color: blanchedalmond;
+        }
+
+        p {
+            line-height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- <img src="https://pics1.baidu.com/feed/024f78f0f736afc331f15e545b4e9fceb64512e7.png?token=321fc1f90edd8801b9c5d94f118fd3d5" -->
+        <!-- alt=""> -->
+        <p>内容显示</p>
+    </div>
+    <p>body内容显示</p>
+
+</body>
+
+<!--如果要合并的话 连写顺序为background:bg-color bg-image position/bg-size 
+    bg-repeat bg-origin bg-clip bg-attachment initial|inherit;-->

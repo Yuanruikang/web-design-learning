@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>显示当前系统时间</button>
+  <div>某个时间</div>
+  <button id='1'>1</button>
+  <button id='2'>2</button>
+  <img src='../Notes/Pics/IMG_0573.PNG' alt='1'>
+
+
+  <script>
+    var timer = document.getElementById('time');
+    console.log(timer); // <div id='time'>123456</div>
+    console.log(typeof timer); // object
+    console.dir(timer); // div#time 下面一大串 内容
+    document.querySelector('button').onclick = function () {
+      document.querySelector('div').innerText = getDate();
+    }
+    function getDate() {
+      var date = new Date();
+      var year = date.getFullYear(); // 返回当前日期的年
+      var month = date.getMonth() + 1; // 返回月份 月份要➕1⃣️，因为默认month范围为（0，11）
+      var dates = date.getDate(); // 返回几号
+      var day = date.getDay(); // 0⃣️是周日 6⃣️是周六 3是周三
+      // 解决日期问题，用数组
+      var week = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+      return '今天是' + year + '年' + month + '月' + dates + '日' + week[day];
+    }
+
+    var a1 = document.getElementById('1');
+    var a2 = document.getElementById('2');
+    var img = document.querySelector('img');
+
+    a1.onclick = function () {
+      img.src = '../Notes/Pics/mouse-events.png';
+      img.alt = '2';
+    }
+    a2.onclick = function () {
+      img.src = '../Notes/Pics/IMG_0573.PNG';
+      img.alt = '1';
+    }
+    var xx;
+    function var2() {
+      console.log(xx);
+      return 3, 5;
+    }
+    xx = 4;
+    xx = 7;
+    console.log(var2());
+
+    var num = 10;
+    function fn() {
+      console.log(num);
+      var num = 20;
+      console.log(num);
+    }
+    fn();
+    var arr22 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var arr23 = [11, 21, 31, 41, 51, 61, 71, 81, 91];
+    console.log(arr22.concat(arr23));
+    console.log(typeof arr22.concat(arr23));
+
+    function myFunction() {
+      var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+      var citrus = fruits.slice(1, 3);
+      console.log(typeof citrus);
+      console.log(citrus);
+      console.log(11, fruits);
+    }
+    myFunction() // Orange,Lemon
+    var fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+    zero = fruits1.splice(2, 0);
+    console.log(zero);
+    console.log(fruits1);
+    console.log(typeof fruits1);
+
+  </script>
+
+</body>
+
+</html>
