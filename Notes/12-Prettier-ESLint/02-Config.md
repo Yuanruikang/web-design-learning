@@ -619,6 +619,14 @@ ESLint 允许你指定你想要支持的 JavaScript 语言选项。默认情况�
 
 # 3⃣️Rules
 
+为了让你对规则有个更好的理解，ESLint 对其进行了分门别类。
+
+所有的规则默认都是禁用的。在[配置文件](https://cn.eslint.org/docs/user-guide/configuring#extending-configuration-files)中，使用 `"extends": "eslint:recommended"` 来启用推荐的规则，报告一些常见的问题，在下文中这些推荐的规则都带有一个✅标记。
+
+[命令行](https://cn.eslint.org/docs/user-guide/command-line-interface#fixing-problems)的 `--fix` 选项用来自动修复规则所报告的问题（目前，大部分是对空白的修复），在下文中会有一个🔧的图标。
+
+具体规则列表👉https://cn.eslint.org/docs/rules/
+
 ## Configuring Rules
 
 ESLint 附带有大量的规则。你可以使用注释或配置文件修改你项目中要使用的规则。要改变一个规则设置，你必须将规则 ID 设置为下列值之一：
