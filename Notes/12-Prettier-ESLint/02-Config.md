@@ -617,13 +617,6 @@ ESLint 允许你指定你想要支持的 JavaScript 语言选项。默认情况�
 
 **注意：**要启用[no-global-assign](https://cn.eslint.org/docs/rules/no-global-assign)规则来禁止对只读的全局变量进行修改。
 
-Configuring Rules
-Disabling Rules
-Plugins
-
-Specifying Parser
-Specifying Processor
-
 # 3⃣️Rules
 
 ## Configuring Rules

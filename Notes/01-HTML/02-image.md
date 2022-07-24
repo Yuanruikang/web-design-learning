@@ -12,7 +12,7 @@
 
 注意：宽度和高度只给一个就行了，这样图片能等比例缩放，不然图片会被拉扯  
       这里面的border属性，一般不在img里面设定而是在css里设置  
-![alt-title](../Pics/alt-title.png)
+![alt-title](../../Pics/alt-title.png)
 
 属性之间不分顺序，属性采用键值对形式。
 ## 路径

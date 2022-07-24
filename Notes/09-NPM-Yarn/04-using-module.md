@@ -61,7 +61,7 @@ npm run build
 
 # NPX
 
-[Source1_npx、npm、cnpm、pnpm区别你搞清楚了吗？](https://juejin.cn/post/7083468345579667493)
+[Source1: npx、npm、cnpm、pnpm区别你搞清楚了吗？](https://juejin.cn/post/7083468345579667493)
 
 NPX(Node Package Execute)是一个 [Node package runner](https://nodejs.dev/learn/the-npx-nodejs-package-runner)，可以自动找到并执行指定的包。
 

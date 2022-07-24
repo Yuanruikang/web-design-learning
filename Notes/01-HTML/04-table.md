@@ -1,7 +1,7 @@
 # 表格
 1. Table用来更好地展示数据
 2. Table的基本结构：
-table tr=table row td=table data
+   table tr=table row td=table data
     ```html
     <table>
     <tr><td></td> <td></td> <td></td> </tr>
@@ -16,12 +16,12 @@ table tr=table row td=table data
    | cellspacing |      像素值       |                     规定单元格之间的空白，默认2像素。                      |
    |    width    |  像素值或百分比   |                              规定表格的宽度。                              |
    
-   **但**：不常用，一般通过css来控制表格属性    
+   **但**：不常用，一般通过css来控制表格属性 
    **这些属性要写在table标签里**
 5. 表格结构标签
    1. \<thead>\</thead>：用于定义表格的头部。＜thead>内部必须拥有＜tr＞标签。一般是位于第一行。
    2. \<tbody>\</tbody＞：用于定义表格的主体 ，主要用于放数据本体。
-   3. 以上标签都是放在\<table></table>标签中。
-6. 合并单元格  
-   colspan 跨列合并  
+   3. 以上标签都是放在\<table>\</table>标签中。
+6. 合并单元格 
+   colspan 跨列合并 
    rowspan 跨行合并

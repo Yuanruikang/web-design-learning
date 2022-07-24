@@ -63,8 +63,10 @@ padding-top padding-right padding-bottom padding-left
 ```
 **注意：**网页元素为了照顾兼容性，尽量只设置左右内外边距，不要设置上下内外边距（设置了也不会显示出来）。但如果转换为块级元素或者行内块元素就可以设置了
 盒子与盒子之间的距离用margin，不超过盒子用padding
-## margin 
+## margin
+
 ## 圆角边框
+
 ## 盒子阴影
 语法：
 ```html

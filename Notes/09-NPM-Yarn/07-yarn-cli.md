@@ -46,7 +46,7 @@ yarn remove
 
 # yarn self-update
 
-```bash
+```shell
 #Upgrading Yarn itself
 yarn set version latest
 yarn set version from sources
@@ -54,9 +54,7 @@ yarn set version from sources
 
 对应npm：
 
-```
+```shell
 npm i npm@latest -g
-
-babel-cli@6.26.0 eslint@8.20.0 highlight.js@11.6.0 js-beautify@1.14.4
 ```
 
